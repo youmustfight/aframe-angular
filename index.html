@@ -4,37 +4,11 @@
     <meta charset="utf-8">
     <title>EEVO</title>
     <link rel="stylesheet" type="text/css" href="public/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" maximum-scale="1.0" minimum-scale="1.0">
     <meta name="description" content="EEVO Virtual Reality App">
     <script src="node_modules/aframe/dist/aframe.js"></script>
   </head>
   <body>
-
-    <div class="menu-toggle">
-      <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <div class="m-c overlay-menu">
-      <div class="menu-wrapper">
-        <img src="public/images/logo.png">
-        <h1>Download the EEVO VR Experience</h1>
-        <hr>
-        <h4>Available for Oculus, Android, or Google Cardboard</h4>
-        <span class="available-on">
-          <a href="#"><img src="public/images/google-play.png"></a>
-          <a href="#"><img src="public/images/cardboard.png"></a>
-          <a href="#"><img src="public/images/oculus.png"></a>
-        </span>
-
-      </div>
-    </div>
 
     <!-- 3D Scene -->
     <a-scene fog="type: linear; color: #240B57; far: 21; near: 4">
@@ -90,6 +64,18 @@
       <!-- Sky -->
       <a-sky color="#EDE4FD"></a-sky>
     </a-scene>
+
+    <footer class="footer-overlay">
+
+      <div class="overlay-content">
+        <h1>Testing Overlay Scroll</h1>
+        <hr>
+        <p>Lets hope this works</p>
+        <p>If it does, then we can do a more normal landing page experience here, with the usual footer and CTAs.</p>
+        <h2> <\3 </h2>
+        <br>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="public/main.js"></script>

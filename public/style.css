@@ -25,7 +25,8 @@ h4 {
 }
 
 
-// Over-rides on A-Canvas
+/* Over-rides on A-Canvas */
+
 .a-canvas, canvas {
   height: 100%;
   width: 100%;
@@ -92,10 +93,27 @@ h4 {
   opacity: 1;
 }
 
+/* Additional Content */
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 400;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  color: white;
+}
+
+.overlay-content {
+  height: auto;
+  margin-top: 100vh;
+  padding-bottom: 10vh;
+  background-color: rgba(36, 11, 87, 1);
+}
 
 
-
-// Navigation Icon Animations
+/* Navigation Icon Animations */
 #nav-icon {
 }
 
