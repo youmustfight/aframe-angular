@@ -3,6 +3,7 @@
 }
 
 body {
+  height: 101vh;
   font-family: sans-serif;
 }
 
@@ -105,10 +106,16 @@ h4 {
   color: white;
 }
 
+
 .overlay-content {
-  height: auto;
-  margin-top: 100vh;
-  padding-bottom: 10vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  opacity: 0;
   background-color: rgba(36, 11, 87, 1);
 }
 
