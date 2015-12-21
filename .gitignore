@@ -3,3 +3,5 @@ node_modules
 npm-debug.log
 .DS_Store
 server/env/development.js
+public/main.js
+public/style.css

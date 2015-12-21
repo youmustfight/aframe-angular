@@ -6,76 +6,49 @@
     <link rel="stylesheet" type="text/css" href="public/style.css" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" maximum-scale="1.0" minimum-scale="1.0">
     <meta name="description" content="EEVO Virtual Reality App">
-    <script src="node_modules/aframe/dist/aframe.js"></script>
   </head>
-  <body>
 
-    <!-- 3D Scene -->
-    <a-scene fog="type: linear; color: #240B57; far: 21; near: 4">
-      <!-- Camera -->
-      <a-camera cursor-visible="false" position="-1 10 8" rotation="-10 -72 0"></a-camera>      
-      <!-- Logo -->
-      <a-image position="5.5 10.5 5.5" rotation="0 -90 0" src="public/images/logo.png" width="2.56" height="1.28">
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="200" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <!-- Tagline -->
-      <a-image position="5.5 9 5.5" rotation="0 -90 0" src="public/images/tagline.png" width="2.71" height="0.15">
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="450" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <a-image position="5.5 8.2 5.5" rotation="0 -90 0" src="public/images/tagline2.png" width="1.21" height="0.13">
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1000" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <!-- Available For -->
-      <a-image position="6.5 7 3.2" rotation="0 -90 0" src="public/images/cardboard.png" width="0.8" height="0.5" >
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1500" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <a-image position="6.5 7 5.2" rotation="0 -90 0" src="public/images/google-play.png" width="0.45" height="0.5">
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1650" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <a-image position="6.5 7 6.9" rotation="0 -90 0" src="public/images/oculus.png" width="0.8" height="0.5">
-        <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
-        <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1800" dur="350" fill="both" easing="ease-out"></a-animation>
-      </a-image>
-      <!-- Pillars -->
-      <a-cube position="0 0 -5" translate="0 4.2 0" width="4.2" depth="4.2" height="60" color="#6A17FF" roughness="0.8"></a-cube>
-      <a-cube position="-3 0 0" translate="0 1.75 0" width="1.75" depth="1.75" height="60" color="#6A17FF" roughness="0.2"></a-cube>
-      <a-cube position="1 0 0" translate="0 1 0" width="1" depth="1" height="60" color="#6A17FF" metalness="0.1"></a-cube>
-      <a-cube position="3 0 1" translate="0 0.5 0" width="0.5" depth="0.5" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="-0.5 0 2" translate="0 0.25 0" width="0.25" depth="0.25" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="20 0 -2" translate="0 10 0" width="10" depth="10" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="-24 0 -34" translate="0 18 0" width="18" depth="18" height="84"color="#6A17FF"></a-cube>
-      <a-cube position="25 0 20" translate="0 12 0" width="12" depth="12" height="72" color="#6A17FF"></a-cube>
-      <a-cube position="-15 0 5" translate="0 3 0" width="3" depth="3" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="-6 0 6" translate="0 1 0" width="1" depth="1" height="60" color="#6A17FF" roughness="0.8"></a-cube>
-      <a-cube position="-20 0 30" translate="0 30 0" width="30" depth="30" height="90" color="#6A17FF" roughness="0.6"></a-cube>
-      <a-cube position="-1 0 14" translate="0 2 0" width="2" depth="2" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="10 0 15" translate="0 4 0" width="4" depth="4" height="92" color="#6A17FF" roughness="1"></a-cube>
-      <a-cube position="5 0 14" translate="0 .6 0" width="0.6" depth="0.6" height="46.5" color="#6A17FF"></a-cube>
-      <a-cube position="5 0 25" translate="0 2 0" width="2" depth="2" height="60" color="#6A17FF"></a-cube>
-      <a-cube position="2 0 15" translate="0 0.2 0" width="0.2" depth="0.2" height="46.5" color="#6A17FF"></a-cube>
-      <a-cube position="4 0 10" translate="0 0.15 0" width="0.15" depth="0.15" height="46.5" color="#6A17FF"></a-cube>
-      <a-cube position="4 0 11" translate="0 0.1 0" width="0.1" depth="0.1" height="46.5" color="#6A17FF"></a-cube>
-      <a-cube position="5 0 11" translate="0 0.3 0" width="0.3" depth="0.3" height="46.5" color="#6A17FF"></a-cube>
-      <!-- Sky -->
-      <a-sky color="#EDE4FD"></a-sky>
-    </a-scene>
+  <script type="text/javascript" src="https://aframe.io/releases/latest/aframe.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+  <script type="text/javascript" src="public/main.js"></script>
 
-    <section class="overlay-content">
-      <h1>Testing Overlay Scroll</h1>
-      <hr>
-      <p>Lets hope this works</p>
-      <p>If it does, then we can do a more normal landing page experience here, with the usual footer and CTAs.</p>
-      <h2> <\3 </h2>
-      <br>
-    </section>
+  <body ng-app="EEVO">
 
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="public/main.js"></script>
+    <!-- Wrapper for Managing Scope -->
+    <div ng-controller="NgASceneController" ng-switch="subview">
+
+      <!-- AFRAME Scene Starts -->
+      <a-scene ng-a-scene fog="type: linear; color: #240B57; far: 21; near: 4" >
+
+        <a-camera ng-a-camera cursor-visible="true" position="-1 10 8" rotation="-10 -72 0" wasd-controls="false"></a-camera>      
+
+        <!-- Scenes -->
+        <ng-a-image ng-switch-when="scene1" img="public/images/cardboard.png"></ng-a-image>
+        <ng-a-image ng-switch-when="scene2" img="public/images/google-play.png"></ng-a-image>
+        <ng-a-image ng-switch-when="scene3" img="public/images/oculus.png"></ng-a-image>
+
+        <!-- Buttons -->
+        <a-image ng-a-button="scene1" position="6.5 7 3.2" rotation="0 -90 0" src="public/images/cardboard.png" width="0.8" height="0.5" >
+          <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
+          <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1500" dur="350" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+        <a-image ng-a-button="scene2" position="6.5 7 5.2" rotation="0 -90 0" src="public/images/google-play.png" width="0.45" height="0.5" >
+          <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
+          <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1650" dur="350" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+        <a-image ng-a-button="scene3" position="6.5 7 6.9" rotation="0 -90 0" src="public/images/oculus.png" width="0.8" height="0.5" >
+          <a-animation attribute="visible" from="false" to="true" begin="100" dur="1" fill="both"></a-animation>
+          <a-animation attribute="scale" from="0 0 0" to="1.8 1.8 1.8" begin="1800" dur="350" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+
+        <pillars-template></pillars-template>
+        <all-the-pillars></all-the-pillars>
+
+        <!-- Sky -->
+        <a-sky color="#EDE4FD"></a-sky>
+
+      </a-scene>
+    </div>
 
   </body>
 </html>

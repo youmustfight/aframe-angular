@@ -1,13 +1,29 @@
 {
-  "name": "EEVO App Landing Page VR",
+  "name": "EEVO-Landing-Page",
   "version": "1.0.0",
   "description": "Experiment with web VR to make an EEVO app landing page",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "python -m SimpleHTTPServer"
   },
-  "author": "",
+  "author": "Mark Hansen",
   "license": "ISC",
   "dependencies": {
-    "aframe": "^0.1.1"
+    "aframe": "^0.1.1",
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
+    "gulp-babel": "^6.1.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-eslint": "^0.14.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-uglify": "^1.1.0",
+    "run-sequence": "^1.1.5"
   }
 }
