@@ -1,2 +1,2 @@
 "use strict";
-window.app = angular.module('EEVO', []);
+window.app = angular.module('ngAFrame', []);
